@@ -1,4 +1,39 @@
-.App {
+body {
+  margin: 0px;
+}
+.App-container {
+  height: 100vh;
+  width: 100vw;
   font-family: sans-serif;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  background-image: url("https://images.unsplash.com/photo-1440581572325-0bea30075d9d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80");
+  box-shadow: inset 0px 0px 243px -1px rgba(0, 0, 0, 1);
+  background-size: cover;
+}
+
+.box-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(49, 0, 49);
+  color: white;
+  width: 100%;
+  margin: 14px;
+}
+
+.question-wrapper {
+  margin-bottom: 10px;
+}
+
+.input-container {
+  display: flex;
+  margin: 5px;
+}
+
+.options {
+  padding-top: 2px;
+  margin-left: 10px;
 }
