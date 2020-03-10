@@ -12,8 +12,23 @@ export default class Sorter extends Component {
     console.log("ComponentDidMount started");
   };
 
+  handleSubmit = event => {
+    console.log("form submitted");
+    event.preventDefault();
+  };
+
   renderQuestions = () => {
-    const data = ["question1", "question2", "question3", "question4"];
+    const data = [
+      "How old are you?",
+      "You're out for a walk and notice a snake 5 ft. from you. Do you kill it?",
+      "question3",
+      "question4",
+      "question5",
+      "question6",
+      "question7",
+      "question8",
+      "question9"
+    ];
 
     return data.map(question => {
       return <QuestionBox item={question} />;
@@ -22,10 +37,15 @@ export default class Sorter extends Component {
 
   render() {
     return (
-      <div className="sort-container">
-        <h1>Sorting Hat</h1>
-        {this.renderQuestions()}
-      </div>
+      <form onSubmit={this.handleSubmit}>
+        <div className="sort-container">
+          <h1>Sorting Hat</h1>
+          {this.renderQuestions()}
+          <button className="submit" type="submit">
+            Apparate Answers
+          </button>
+        </div>
+      </form>
     );
   }
 }
