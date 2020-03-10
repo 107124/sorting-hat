@@ -20,6 +20,9 @@ body:before {
 body {
   background-color: black;
   margin: 0px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 100vh;
 }
 
 .App-container {
