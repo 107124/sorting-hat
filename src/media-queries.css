@@ -1,0 +1,15 @@
+@media (max-width: 737px) {
+  .box-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(49, 0, 49);
+    color: white;
+    width: 300px;
+    margin: 14px;
+    max-width: 800px;
+    border-radius: 30px;
+    /* border: 2px solid rgb(163, 139, 0); */
+  }
+}

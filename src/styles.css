@@ -34,6 +34,7 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
 }
 
 .page-container {
@@ -47,8 +48,8 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: rgb(49, 0, 49);
-  color: white;
-  width: 80%;
+  color: rgb(255, 255, 255);
+  width: 500px;
   margin: 14px;
   max-width: 800px;
   border-radius: 30px;
@@ -89,8 +90,22 @@ body {
 }
 
 .submit {
-  width: 20%;
+  width: 90%;
+  max-width: 200px;
+  outline: none;
+  border-radius: 30px;
+  background-color: #68192fde;
+  color: #d07b04;
+  border: none;
+  font-size: 1.2em;
+  padding: 5px;
+  transition: ease-in-out 0.3s;
+  cursor: pointer;
   /* background-image: url("https://www.google.com/url?sa=i&url=http%3A%2F%2Fwww.cosforums.com%2Fshowthread.php%3Ft%3D132260&psig=AOvVaw0kEOPVp1AKbNQWMkhYPiKh&ust=1583963453764000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJjf_enxkOgCFQAAAAAdAAAAABAH"); */
+}
+
+.submit:hover {
+  filter: brightness(150%);
 }
 
 /* footer */

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import QuestionBox from "./questionBox";
+import Fade from "./Fade";
 
 export default class Sorter extends Component {
   constructor(props) {
@@ -39,11 +40,15 @@ export default class Sorter extends Component {
     return (
       <form onSubmit={this.handleSubmit}>
         <div className="sort-container">
-          <h1>Sorting Hat</h1>
+          <div>
+            <h1>Sorting Hat</h1>
+          </div>
           {this.renderQuestions()}
-          <button className="submit" type="submit">
-            Apparate Answers
-          </button>
+          <Fade>
+            <button className="submit" type="submit">
+              Apparate Answers
+            </button>
+          </Fade>
         </div>
       </form>
     );
