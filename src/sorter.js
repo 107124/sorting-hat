@@ -45,7 +45,11 @@ export default class Sorter extends Component {
           </div>
           {this.renderQuestions()}
           <Fade>
-            <button className="submit" type="submit">
+            <button
+              className="submit"
+              type="submit"
+              onMouseEnter={"maybe do something cool?"}
+            >
               Apparate Answers
             </button>
           </Fade>
